@@ -24,6 +24,7 @@
 // a = 100000	->	"The number is positive and more than 1000"
 
 
+
 void task_00( int a) {
 if (a == 0) { 
 		write(1, "The number is zero\n", 20);
@@ -35,18 +36,20 @@ else if ((a > 0) && (a > 1000)){
 	write(1, "The number is positive and more than 1000\n", 43 );
 	
 	}
-if ((a < 0) && (a <= -10)){
+if ((a < 0) && (a >= -10)){
 	write(1, "The number is negative and less or equal to 10\n", 48 );
 	
 	}
-if  ( a <= -1000) {
+else if  ((a < 0) && (a <= 1000)) {
 	write(1, "The number is negative and more than 100 and less or equal to 1000\n", 68 );
 	}
+if  ((a < 0) && (a < 1000)) {
+	write(1, "The number is negative and more than 1000 \n", 44 );
+	}
+
 	
 
 
 }
  
-
-
 
