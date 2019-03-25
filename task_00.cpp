@@ -60,17 +60,6 @@ void task_00( int a) {
 
 }
 
-int main() {
-	task_00(0);
-	task_00( 8);
-	task_00( 88);
-	task_00( 888);
-	task_00( 9999);
 
-	task_00( -8);
-	task_00( -88);
-	task_00( -888);
-	task_00( -9999);
-}
  
 
