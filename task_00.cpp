@@ -26,30 +26,51 @@
 
 
 void task_00( int a) {
-if (a == 0) { 
-		write(1, "The number is zero\n", 20);
+	if (a == 0) { 
+			write(1, "The number is zero\n", 20);
+		}
+	if ((a > 0) && (a <= 10)){
+			write(1, "The number is positive and less or equal to 10\n", 48);
 	}
-if ((a > 10) && (a <= 100)){
-	write(1, "The number is positive and more than 10 and less or equal to 100\n", 66 );
+	else if ((a > 10) && (a <= 100)){
+		write(1, "The number is positive and more than 10 and less or equal to 100\n", 66);
 	}
-else if ((a > 0) && (a > 1000)){
-	write(1, "The number is positive and more than 1000\n", 43 );
-	
+	else if ((a > 100) && (a <= 1000)){
+		write(1, "The number is positive and more than 100 and less or equal to 1000\n", 68);
 	}
-if ((a < 0) && (a >= -10)){
-	write(1, "The number is negative and less or equal to 10\n", 48 );
-	
-	}
-else if  ((a < 0) && (a <= 1000)) {
-	write(1, "The number is negative and more than 100 and less or equal to 1000\n", 68 );
-	}
-if  ((a < 0) && (a < 1000)) {
-	write(1, "The number is negative and more than 1000 \n", 44 );
+	else if ((a > 0) && (a > 1000)) {
+		write(1, "The number is positive and more than 1000\n", 43);
 	}
 
-	
 
 
+
+	if ((a < 0) && (a >= -10)){
+			write(1, "The number is negative and less or equal to 10\n", 47);
+	}
+	else if ((a < -10) && (a >= -100)){
+		write(1, "The number is negative and more 10 and less or equal to 100\n", 61);
+	}
+	else if ((a < -100) && (a >= -1000)){
+		write(1, "The number is negative and more than 100 and less or equal to 1000\n", 68);
+	}
+	else if  (a < -1000) {
+		write(1, "The number is negative and more than 1000\n", 43);
+	}
+
+}
+
+int main() {
+	task_00(0);
+	task_00( 8);
+	task_00( 88);
+	task_00( 888);
+	task_00( 9999);
+
+	task_00( -8);
+	task_00( -88);
+	task_00( -888);
+	task_00( -9999);
 }
  
 
