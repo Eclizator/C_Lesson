@@ -39,7 +39,7 @@ if ((a < 0) && (a <= -10)){
 	write(1, "The number is negative and less or equal to 10\n", 48 );
 	
 	}
-if  ( a <= -100) {
+if  ( a <= -1000) {
 	write(1, "The number is negative and more than 100 and less or equal to 1000\n", 68 );
 	}
 	

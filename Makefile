@@ -12,8 +12,8 @@ EOC ="\033[0;0m"
 RESET = "\x1b[0m"
 #==================
 
-SRC = lesson_00.cpp
-BINARY = build.out
+SRC = task_00.cpp
+BINARY = start.out
 
 all:
 	@echo $(CYAN)"Start compilation"
