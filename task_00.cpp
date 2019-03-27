@@ -45,7 +45,7 @@ void task_00( int a) {
 
 
 
-	if ((a < 0) && (a <= -10)){
+	if ((a < 0) && (a >= -10)){
 			write(1, "The number is negative and less or equal to 10\n", 47);
 	}
 	else if ((a > -10) && (a <= -100)){
