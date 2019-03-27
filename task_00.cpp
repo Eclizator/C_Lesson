@@ -32,13 +32,13 @@ void task_00( int a) {
 	if ((a > 0) && (a >= 10)){
 		write(1, "The number is positive and less or equal to 10\n", 48);
 	}
-	else ((a > 10) && (a <= 100)){
+	else if ((a > 10) && (a <= 100)){
 		write(1, "The number is positive and more than 10 and less or equal to 100\n", 66);
 	}
-	if ((a > 100) && (a <= 1000)){
+	else if ((a > 100) && (a <= 1000)){
 		write(1, "The number is positive and more than 100 and less or equal to 1000\n", 68);
 	}
-	else (a > 1000) {
+	else if ((a > 0) && (a > 1000)) {
 		write(1, "The number is positive and more than 1000\n", 43);
 	}
 
@@ -54,7 +54,7 @@ void task_00( int a) {
 	if ((a < -100) && (a <= -1000)){
 		write(1, "The number is negative and more than 100 and less or equal to 1000\n", 68);
 	}
-	else (a > -1000) {
+	else (a < 0) && (a > -1000) {
 		write(1, "The number is negative and more than 1000\n", 43);
 	}
 
