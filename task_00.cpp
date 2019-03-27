@@ -54,7 +54,7 @@ void task_00( int a) {
 	else if ((a < -100) && (a <= -1000)){
 		write(1, "The number is negative and more than 100 and less or equal to 1000\n", 68);
 	}
-	else if (a < -1000) {
+	if (a < -1000) {
 		write(1, "The number is negative and more than 1000\n", 43);
 	}
 
