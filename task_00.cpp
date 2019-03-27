@@ -27,7 +27,7 @@
 
 void task_00( int a) {
 	if (a == 0) { 
-			write(1, "The number is zero\n", 20);
+			write(1, "The number is zero\n", 19);
 		}
 	if ((a > 0) && (a <= 10)){
 			write(1, "The number is positive and less or equal to 10\n", 47);
